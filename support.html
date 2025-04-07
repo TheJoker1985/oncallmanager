@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Call Tracker - Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+        }
+        .language-selector {
+            float: right;
+        }
+        .language-selector a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <a href="#" onclick="switchLanguage('en'); return false;">English</a> |
+        <a href="#" onclick="switchLanguage('fr'); return false;">Français</a>
+    </div>
+
+    <!-- English Content -->
+    <div id="en-content">
+        <div class="content-section">
+            <h1>Support for On Call Tracker</h1>
+            
+            <h2>Contact</h2>
+            <p>For any questions or issues regarding the On Call Tracker application, please contact us at:</p>
+            <p><strong>Email</strong>: the_adicts@hotmail.com</p>
+            
+            <h2>FAQ</h2>
+            
+            <h3>Is the application free?</h3>
+            <p>Yes, the application is completely free. There are no in-app purchases, subscriptions, or paid features.</p>
+            
+            <h3>How do I reset my data?</h3>
+            <p>You can reset your data in the application by going to the "Statistics" tab and pressing the "Reset on-call sequence" button.</p>
+            
+            <h3>Is the application available in multiple languages?</h3>
+            <p>Yes, the application is available in French and English.</p>
+            
+            <h3>Is the application available for iPad?</h3>
+            <p>No, the application is optimized only for iPhone and Android devices. It is not available for iPad.</p>
+            
+            <h2>Privacy Policy</h2>
+            <p>Our privacy policy is available at: <a href="https://privacy-oncallmanager.netlify.app/" target="_blank">https://privacy-oncallmanager.netlify.app/</a></p>
+        </div>
+    </div>
+
+    <!-- French Content -->
+    <div id="fr-content" style="display: none;">
+        <div class="content-section">
+            <h1>Support pour On Call Tracker</h1>
+            
+            <h2>Contact</h2>
+            <p>Pour toute question ou problème concernant l'application On Call Tracker, veuillez nous contacter à l'adresse suivante :</p>
+            <p><strong>Email</strong> : the_adicts@hotmail.com</p>
+            
+            <h2>FAQ</h2>
+            
+            <h3>L'application est-elle gratuite ?</h3>
+            <p>Oui, l'application est entièrement gratuite. Il n'y a pas d'achats intégrés, d'abonnements ou de fonctionnalités payantes.</p>
+            
+            <h3>Comment réinitialiser mes données ?</h3>
+            <p>Vous pouvez réinitialiser vos données dans l'application en allant dans l'onglet "Statistiques" et en appuyant sur le bouton "Réinitialiser la séquence de garde".</p>
+            
+            <h3>L'application est-elle disponible en plusieurs langues ?</h3>
+            <p>Oui, l'application est disponible en français et en anglais.</p>
+            
+            <h3>L'application est-elle disponible pour iPad ?</h3>
+            <p>Non, l'application est optimisée uniquement pour iPhone et les appareils Android. Elle n'est pas disponible pour iPad.</p>
+            
+            <h2>Politique de confidentialité</h2>
+            <p>Notre politique de confidentialité est disponible à l'adresse : <a href="https://privacy-oncallmanager.netlify.app/" target="_blank">https://privacy-oncallmanager.netlify.app/</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 On Call Tracker. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('en-content').style.display = 'block';
+                document.getElementById('fr-content').style.display = 'none';
+            } else {
+                document.getElementById('en-content').style.display = 'none';
+                document.getElementById('fr-content').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
